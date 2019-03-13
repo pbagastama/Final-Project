@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BPI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/form.css">  
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Radio Button Action -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('label').click(function() {
+            $('.active').removeClass("active");
+          $(this).addClass("active");
+        });
+    });
+  </script>
+
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="home.html">BPI</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="home.html">Beranda</a></li>
+          <li><a href="home.html">Profil</a></li>
+          <li><a href="home.html">Berita</a></li>
+          <li class="menu-has-children"><a href="#">Beasiswa</a>
+            <ul>
+              <li><a href="beasiswa/bpn.html">Beasiswa Pelajar Nusantara</a></li>
+              <li><a href="beasiswa/bmb.html">Beasiswa Mahasiswa Berprestasi</a></li>
+              <li><a href="beasiswa/bli.html">Beasiswa Lanjutan Indonesia</a></li>
+              <li><a href="beasiswa/bic.html">Beasiswa Indonesia Cerdas</a></li>
+              <li><a href="beasiswa/bln.html">Beasiswa Lintas Negara</a></li>
+            </ul>
+           </li>
+          <li class="menu-has-children"><a href="pengumuman/umum.html">Pengumuman</a></li>
+          <li><a href="home.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- #header -->
+
+  <!-- Profil -->
+  <section class="profil" id="profil">
+    <div class="container text-center">
+      <i class="fa fa-university fa-5x logo" aria-hidden="true"></i>
+      <h2>
+        Formulir Pendaftaran Program <br>Beasiswa Pendidikan Indonesia<br>(BPI) 
+      </h2>
+      <h4>
+        Pastikan Anda telah melengkapi seluruh berkas persyaratan
+      </h4>
+    </div>
+  </section>
+  <!-- /Profil -->
+
+    <!-- Start Right Form -->
+    <div class="kanan col-sm-12">
+        <form>
+          <div class="form-group">
+            <h5 class="col-sm-5 control-label"> Nama </h5>
+            <h5 class="col-sm-5 control-label"> No.KTP / Identitas Diri </h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="nama" type="text" placeholder="Nama Lengkap">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="identitas" type="text" placeholder="KTP/KTM">
+            </div>
+            
+            <h5 class="col-sm-5 control-label"> Tempat, Tanggal Lahir</h5>
+            <h5 class="col-sm-5 control-label"> Agama </h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="ttl" type="text" placeholder="Tanggal/Bulan/Tahun">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="agama" type="text" placeholder="Agama Anda">
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Jenis Kelamin </h5>
+            <h5 class="col-sm-5 control-label"> Status Pernikahan </h5>
+            <div class="col-sm-5 kolom">
+              <label>
+                  Laki-Laki
+                  <span></span>
+                  <input type="radio" name="jenis"/>
+              </label>
+              <label>
+                  Perempuan
+                  <span></span>
+                  <input type="radio" name="jenis"/>
+              </label>
+            </div>
+            <div class="col-sm-5 kolom">
+              <select class="form-control" id="status">
+                <option>--- Status ---</option>
+                <option>Belum Menikah</option>
+                <option>Menikah</option>
+              </select>
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Pekerjaan </h5>
+            <h5 class="col-sm-5 control-label"> Nama Instansi </h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="kerja" type="text" placeholder="Pekerjaan Anda">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="jurusan" type="text" placeholder="Instansi / Universitas / Sekolah">
+            </div>
+
+            <h5 class="col-sm-10 control-label"> Alamat Lengkap </h5>
+            <div class="col-sm-10 kolom">
+              <textarea class="form-control" id="alamat" rows="5" placeholder="Tulis Alamat Lengkap Anda Disini"></textarea>
+            </div>
+
+            <h5 class="col-sm-5 control-label"> No.telp / HP </h5>
+            <h5 class="col-sm-5 control-label"> Email </h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="kontak" type="text" placeholder="HP / Telepon Anda">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="email" type="text" placeholder="Masukan Email Anda">
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Nama Orang Tua/Wali</h5>
+            <h5 class="col-sm-5 control-label"> Pekerjaan Orang Tua/Wali</h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="nm_ortu" type="text" placeholder="Nama Ayah/ibu/wali">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="pk_ortu" type="text" placeholder="Pekerjan Orang Tua Anda">
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Pendidikan Terakhir</h5>
+            <h5 class="col-sm-5 control-label"> Nama Universitas/Sekolah</h5>
+            <div class="col-sm-5 kolom">
+              <select class="form-control" id="pendidikan">
+                <option>--- Pendidikan Terakhir ---</option>
+                <option>SMA/SMK</option>
+                <option>S1</option>
+                <option>S2</option>
+                <option>S3</option>
+              </select>
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="pk_ortu" type="text" placeholder="Tulis Lengkap Nama Universitas atau Sekolah">
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Jurusan </h5>
+            <h5 class="col-sm-5 control-label"> IPK/Nilai Terakhir </h5>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="jurusan" type="text" placeholder="Jurusan Anda">
+            </div>
+            <div class="col-sm-5 kolom">
+              <input class="form-control" id="nilai" type="text" placeholder="Nilai atau IPK Terakhir">
+            </div>
+
+            <h5 class="col-sm-5 control-label"> Pengalaman Organisasi </h5>
+            <h5 class="col-sm-5 control-label"> Motivasi </h5>
+            <div class="col-sm-5 kolom">
+              <textarea class="form-control" id="organisasi" rows="3" placeholder="Tulis Pengalaman Organisasi Anda Disini"></textarea>
+            </div>
+            <div class="col-sm-5 kolom">
+              <textarea class="form-control" id="Motivasi" rows="3" placeholder="Tulis Motivasi Anda Disini"></textarea>
+            </div>
+
+            <h5 class="col-sm-10 control-label"> Alasan Mengikuti Program Beasiswa ini </h5>
+            <div class="col-sm-10 kolom">
+              <textarea class="form-control" id="alasan" rows="5" placeholder="Tulis Alasan Anda Disini"></textarea>
+            </div>
+
+            <div class="col-sm-10">
+              <a type="button" class="btn btn-lg btn-block btn-info next" href="end.html"> Submit </a>
+            </div>
+           </div>
+        </form>
+    </div>
+    <!-- End Right Form -->
+
+  
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              Copyright <br> ©BagasBP (4IA18)<br> Gunadarma University
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+
+</body>
+</html>
+

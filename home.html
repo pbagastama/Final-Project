@@ -1,413 +1,395 @@
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8"/>
-        <title>Haus! Indonesia</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+<html lang="en">
 
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<head>
+  <meta charset="utf-8">
+  <title>BPI </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
 
-        <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
 
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="img/favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- BODY -->
-    <body>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 
-        <!--========== HEADER ==========-->
-        <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="menu-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
+  <!-- Bootstrap CSS File -->
 
-                        <!-- Logo -->
-                        <div class="logo">
-                            <a class="logo-wrap" href="http://haus.co.id/">
-                                <img class="logo-img logo-img-main" src="img/home/logo-01.png" alt="Asentus Logo">
-                                <img class="logo-img logo-img-active" src="img/home/logo-02.png" alt="Asentus Logo">
-                            </a>
-                        </div>
-                        <!-- End Logo -->
-                    </div>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
-                        <div class="menu-container">
-                            <ul class="navbar-nav navbar-nav-right">
-                              <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="http://haus.co.id/">HOME</a></li>
-                              <li class="nav-item"><a class="nav-item-child nav-item-hover" href="franchise.php">KEMITRAAN</a></li>
-                              <li class="nav-item"><a class="nav-item-child nav-item-hover" href="location.php">LOKASI</a></li>
-                              <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">KONTAK</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Navbar Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-        <!--========== END HEADER ==========-->
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-  <section id="slider">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <div class="container">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        </ol>
-        </div>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                 <img class="img-responsive" src="img/home/slider-1.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="img-responsive" src="img/home/slider-1.jpg" alt="">
-            </div>
-        </div>
+<body>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="">BPI</a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="home.html">Beranda</a></li>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#berita">Berita</a></li>
+          <li class="menu-has-children"><a href="#">Beasiswa</a>
+            <ul>
+              <li><a href="beasiswa/bpn.html">Beasiswa Pelajar Nusantara</a></li>
+              <li><a href="beasiswa/bmb.html">Beasiswa Mahasiswa Berprestasi</a></li>
+              <li><a href="beasiswa/bli.html">Beasiswa Lanjutan Indonesia</a></li>
+              <li><a href="beasiswa/bic.html">Beasiswa Indonesia Cerdas</a></li>
+              <li><a href="beasiswa/bln.html">Beasiswa Lintas Negara</a></li>
+            </ul>
+           </li>
+          <li class="menu-has-children"><a href="pengumuman/umum.html">Pengumuman</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
-</section>
+  </header>
+  <!-- #header -->
 
-        <!-- Promo Section -->
-        <div class="promo-section overflow-h">
-          <div class="margin-b-20">
-            <div class="container">
-                <div class="clearfix">
-                    <div class="ver-center">
-                        <div class="ver-center-aligned">
-                            <div class="promo-section-col">
-                                <h2>About HAUS!</h2>
-                                <p>HAUS! adalah gerai minuman yang menyediakan segala jenis minuman kekinian yang sedang hits dengan harga yang affordable, cocok untuk kamu pelajar dan mahasiswa yang pengen hemat. Dari mulai thai tea, green tea, taro, ovomaltine, cheese tea dan lain-lain, semua di bandrol dengan harga murah, mulai dari 5 ribu sampai 15 ribu saja.</p>
-                                <p>Saat ini baru mempunyai 50 cabang yang tersebar di daerah Jabodetabek dan Bandung, dengan antusiasme masyarakat terhadap minuman HAUS! ini, kami sehari dapat menjual 600 sampai 900 cup / hari.</p>
-                            </div>
-                        </div>
+  <!-- Hero -->
+    <div class="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div id="banner" class="carousel-inner">
+    
+          <div id="slider-bs" class="item active">
+            <img src="img/cover.jpg" alt="Los Angeles">
+            <div class="carousel-caption">
+              <h1>Los Angeles</h1>
+              <h2>LA is always so much fun!</h2>
+            </div>
+          </div>
+    
+          <div id="slider-bs" class="item">
+            <img src="img/cover-1.jpg" alt="Chicago">
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+        
+          <div id="slider-bs" class="item">
+            <img src="img/cover-2.jpg" alt="New York">
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+      
+        </div>
+    
+        <!-- Left and right controls
+        <a class="left carousel-control" href="#myCarousel" data-slide-to="0">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide-to="1">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a> -->
+      </div>
+
+      <!-- <div class="col-md-12">
+        <h1>
+        	Program Beasiswa Pendidikan Indonesia    
+        </h1>
+        <h2 class="tagline">
+          Beasiswa yang diberikan pemerintah Indonesia <br> untuk meningkatkan kualitas SDM melalui pendidikan formal <br> baik di dalam maupun di luar negeri
+        </h2>
+      </div> -->
+    </div>
+
+  <!-- /Hero -->
+
+  <!-- Profil -->
+  <section class="profil" id="profil">
+    <div class="container text-center">
+      <h2>
+        Beasiswa Pendidikan Indonesia
+      </h2>
+      <p>
+        BPI (Beasiswa Pendidikan indonesia) adalah salah satu Lembaga Penyedia Beasiswa yang dibuat oleh Pemerintah Indonesia untuk seluruh Warga Negara Indonesia yang memiliki Prestasi dan Kemauan belajar yang tinggi. Beasiswa yang tersedia terdapat untuk berbagai jenjang pendidikan dimulai dari Pelajar Sekolah, Mahasiwa, dan Mahasiswa Lanjutan di indonesia. <br><br>
+
+        Melalui website program Beasiswa Pendidikan Indonesia ini, informasi tentang program-program Beasiswa dari Pemerintah diharapkan dapat diketahui dengan baik oleh masyarakat. Kami berharap masyarakat mendapatkan informasi yang benar dan terbaru tentang program-program Beasiswa Pendidikan Indonesia. <br>
+      </p>
+    </div>
+  </section>
+  <!-- /Profil -->
+  
+  <!-- Berita -->
+  <section class="berita" id="berita">
+    <div class="container text-center">
+      <h2>
+        Berita Terkini
+      </h2>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="row">
+        
+        <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt1.html" title="">
+                  <img src="img/berita1.jpg" class="thumb-img" alt="">
+                </a>
+              </div>
+
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt1.html">Beasiswa di KAIST Korea <br>untuk S1 (Full)</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 1 Desember, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> Korea</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="promo-section-img-right"><br>
-                  <img class="img-responsive" src="img/home/home-02.jpg" alt="Content Image">
-            </div>
-
+                    <div class="post-button">
+                        <a href="berita/brt1.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
           </div>
         </div>
-        <!-- End Promo Section -->
 
+        <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt2.html" title="">
+                  <img src="img/berita2.jpg" class="thumb-img" alt="">
+                </a>
+              </div>
 
-        <!-- Menu -->
-        <div class="bg-color-sky-light">
-        <div class="content-lg container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2>Our Flavours</h2>
-
-                    <!-- Swiper Testimonials -->
-                    <div class="swiper-slider swiper-testimonials">
-                        <!-- Swiper Wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Thaitea.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ice Thai Tea</h6>
-                                      <h5><b>Rp 8000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Thaitea-cheese.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ice Thai Tea Cheese</h6>
-                                      <h5><b>Rp 15.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-
-
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Greentea-Cheese.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ice Green Thai Tea Cheese</h6>
-                                      <h5><b>Rp 15.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                 <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Baby-Bubble.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Baby Bubble Milktea</h6>
-                                      <h5><b>Rp 12.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                               <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                        <img class="img-responsive" src="img/home/menu/Black-Oreo-Cheese.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Black Oreo Cheese</h6>
-                                      <h5><b>Rp 15.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Milo-Greentea.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Milo Greentea</h6>
-                                      <h5><b>Rp 12.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Es-Kopi-Susu.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Es Kopi Susu</h6>
-                                      <h5><b>Rp 10.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Taro-Cheese.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ice Taro Cheese</h6>
-                                      <h5><b>Rp 15.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Ovaltine.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ovaltine</h6>
-                                      <h5><b>Rp 12.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Lemon-Tea.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Ice Lime Tea</h6>
-                                      <h5><b>Rp 8.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-                              
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Manggo-Yakult.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Manggo Yakult</h6>
-                                      <h5><b>Rp 11.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>
-
-                              
-                                <div class="col-sm-2 sm-margin-b-10">
-                                  <div class="margin-b-20">
-                                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                          <img class="img-responsive" src="img/home/menu/Grape-Yakult.png" alt="Our Exceptional Solutions Image">
-                                      </div>
-                                  </div>
-                                  <div style="background: #fafafa">
-                                    <center>
-                                      <h6>Grape Yakult</h6>
-                                      <h5><b>Rp 11.000</b></h5>
-                                    </center>
-                                  </div>
-                              </div>                              
-                            </div>
-                        </div>
-                        <!-- End Swiper Wrapper -->
-
-                        <!-- Pagination -->
-                        <div class="swiper-testimonials-pagination"></div>
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt2.html">Beasiswa OTS 2018 – 2019 <br>ke Belanda</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 12 Desember, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> Netherlands</p>
                     </div>
-                    <!-- End Swiper Testimonials -->
-                </div>
-            </div>
-            <!--// end row -->
+                    <div class="post-button">
+                        <a href="berita/brt2.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt3.html" title="">
+                  <img src="img/berita3.jpg" class="thumb-img" alt="">
+                </a>
+              </div>
+
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt3.html">Beasiswa Gates Cambridge 2018</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 15 Desember, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> England</p>
+                    </div>
+                    <div class="post-button">
+                        <a href="berita/brt3.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
+          </div>
+        </div>
+
+       <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt4.html" title="">
+                  <img src="img/berita4.png" class="thumb-img" alt="">
+                </a>
+              </div>
+
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt4.html">Beasiswa S2 di Thailand-(Full) 2018 – 2019</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 21 Desember, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> Thailand</p>
+                    </div>
+                    <div class="post-button">
+                        <a href="berita/brt4.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt5.html" title="">
+                  <img src="img/berita5.jpg" class="thumb-img" alt="">
+                </a>
+              </div>
+
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt5.html">Beasiswa Clarendon University of Oxford Gelar S2, S3</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 23 Desmeber, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> England</p>
+                    </div>
+                    <div class="post-button">
+                        <a href="berita/brt5.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="post">
+                                        
+              <div class="post-img">
+                <a href="berita/brt6.html" title="">
+                  <img src="img/berita6.jpg" class="thumb-img" alt="">
+                </a>
+              </div>
+
+              <div class="post-body">
+                  <h3 class="post-title"><a href="berita/brt6.html">Beasiswa Program Pertukaran Mahasiswa 2018 – 2019</a></h3>
+                    <div class="post-info">
+                      <p class="margin-xs-bottom">
+                        <span class="post-time-upcoming"><span class="fa fa-calendar fa-fw"></span> 28 Desember, 2017</span>    
+                      </p>
+                      <p><span class="fa fa-map-marker fa-fw"></span> Amerika</p>
+                    </div>
+                    <div class="post-button">
+                        <a href="berita/brt6.html" class="btn btn-default">Lihat Detail</a>
+                    </div>
+              </div>
+                                        
+          </div>
+        </div>
+
+
+
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Berita -->
+  
+  <!-- Kontak-->
+  <section id="kontak">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title">Kontak</h2>
         </div>
       </div>
-        <!-- End Menu -->
 
-       
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-4 info">
+          <div class="alamat">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p> Gedung C Lantai 6 Jl Jenderal Sudirman, Senayan - Jakarta, 10270 </p>
             </div>
+          </div>
         </div>
-        <!-- End Clients -->
-        <!--========== END PAGE LAYOUT ==========-->
-
-        <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Links -->
-            <div class="footer-seperator">
-                <div class="content-sm container">
-                    <div class="row">
-                      <div class="col-sm-4 sm-margin-b-10">
-                          <!-- List -->
-                          <ul class="list-unstyled footer-list">
-                              <li class="footer-list-item"><a class="footer-list-link" href="#"><h1 style="color:#fff">HAUS!</h1></a></b></li>
-                              <li class="footer-list-item"><a class="footer-list-link" href="#"><h3 style="color:#fff">Phone : 0856-9234-0091</h3></a></li>
-                              <li class="footer-list-item"><a class="footer-list-link" href="#"><h5 style="color:#fff">E-mail : mitra.haus@gmail.com</h5></a></li>
-                          </ul>
-                          <!-- End List -->
-                      </div>
-                        <div class="col-sm-4 sm-margin-b-10">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Kemitraan</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="contact.php">Lokasi Store</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Kontak</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-10">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Paket Kemitraan</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Promo</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Komitmen</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Forum</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-
-                    </div>
-                    <!--// end row -->
-                </div>
+            
+        <div class="col-lg-4 col-md-4 info">
+          <div class="email">    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>bpi_official@gmail.com</p>
             </div>
-            <!-- End Links -->
-        </footer>
-        <!--========== END FOOTER ==========-->
+          </div>
+        </div>
 
-        <!-- Back To Top -->
-        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+        <div class="col-lg-4 col-md-4 info">
+          <div class="telp">
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>(021) 3808392</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-        <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
 
-        <!-- PAGE LEVEL PLUGINS -->
-        <script src="vendor/jquery.easing.js" type="text/javascript"></script>
-        <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
-        <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
-        <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
-        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+          <div class="col-lg-12 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              Copyright <br> ©BagasBP (4IA18)<br> Gunadarma University
+            </p>
+          </div>
 
-        <!-- PAGE LEVEL SCRIPTS -->
-        <script src="js/layout.min.js" type="text/javascript"></script>
-        <script src="js/components/wow.min.js" type="text/javascript"></script>
-        <script src="js/components/swiper.min.js" type="text/javascript"></script>
-        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
 
-    </body>
-    <!-- END BODY -->
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/tether/js/tether.min.js"></script>
+  <script src="lib/stellar/stellar.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/easing/easing.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/parallax/parallax.js"></script>
+  <script src="lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+</body>
 </html>
